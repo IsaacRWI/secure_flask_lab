@@ -16,6 +16,6 @@
     </form>
 
 {% if name %}
-    <p>Hello, <strong>{{ name }}</strong>!</p>
+    <p>Hello, <strong>{{ name | safe}}</strong>!</p>
 {% endif %}
 {% endblock %}
