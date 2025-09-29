@@ -7,6 +7,7 @@
     <p>Please enter your name below:</p>
 
     <form method="POST">
+    {{ form.hidden_tag() }}
     <p>
         {{ form.name.label }}<br>
         {{ form.name(size=32) }}
